@@ -433,6 +433,8 @@ void build_qp_attr(struct rdma_cm_id *id, struct ibv_exp_qp_init_attr *qp_attr)
 	//qp_attr->cap.max_recv_wr = MAX_RECV_QUEUE_SIZE;
 	qp_attr->cap.max_send_wr = global_sq_sz;
 	qp_attr->cap.max_recv_wr = global_sq_sz;
+	// qp_attr->cap.max_send_wr = 128;
+	// qp_attr->cap.max_recv_wr = 128;
 	//qp_attr->cap.max_recv_wr = 120;
 
 

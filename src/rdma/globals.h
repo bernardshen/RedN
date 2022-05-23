@@ -11,8 +11,8 @@
 #define MAX_MR 2 // max # of memory regions per connection (XXX keep this value at 2 or lower for now)
 #define MAX_PENDING 500 // max # of pending app responses per connection
 #define MAX_BUFFER 1 // max # of msg buffers per connection
-#define MAX_SEND_QUEUE_SIZE 32 // depth of rdma send queue
-#define MAX_RECV_QUEUE_SIZE 32 // depth of rdma recv queue
+#define MAX_SEND_QUEUE_SIZE 128 // depth of rdma send queue
+#define MAX_RECV_QUEUE_SIZE 128 // depth of rdma recv queue
 
 // max # of rdma operations that can be batched together
 // must be < MAX_SEND_QUEUE_SIZE
